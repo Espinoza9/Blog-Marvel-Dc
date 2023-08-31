@@ -1,0 +1,31 @@
+
+
+.container__menu-bar > ul{
+  display: flex;
+  flex-direction: row;
+  
+  z-index: 99;
+  position: relative;
+  padding: 1rem;
+  margin-left: 25%;
+}
+
+.container__menu-bar > ul > li{
+
+  list-style: none;
+}
+  .icon{
+    width: 5%;
+ display: flex;
+ 
+  }
+  hr{
+    border-color:#fff6f6;
+    box-sizing:border-box;
+    margin-left: -13%;
+    width:100%;  
+    z-index: 99;
+    position: absolute;
+ 
+  }
+

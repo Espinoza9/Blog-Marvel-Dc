@@ -1,0 +1,21 @@
+<div class="carousel-container">
+  <button class="nav-prev" (click)="navigate(-1)" [disabled]="disablePreviousButton"><img class="icon2" src="../../../assets/setas-direitas.png" alt=""></button>
+
+  <div class="carousel" [style.transform]="'translateX(-' + (currentItemIndex * 100) + '%)'">
+      <div
+        class="carousel-item"
+        *ngFor="let item of carouselItems; let i = index"
+        [ngClass]="{ 'active': i === currentItemIndex }"
+      >
+        <img class="carousel-img" [src]="item.imageUrl" alt="{{ item.title }}" />
+        <figcaption><h1>{{ item.title }}
+            <ul>
+                <li>{{ item.descricao }}</li>
+            </ul>
+           
+        </h1></figcaption>
+    </div>
+    </div>
+    <button class="nav-button next" (click)="navigate(1)" ><img class="icon" src="../../../assets/setas-direitas.png" alt=""></button>
+  </div>
+  
